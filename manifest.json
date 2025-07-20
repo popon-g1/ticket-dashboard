@@ -1,0 +1,10 @@
+{
+  "name": "Ticket Bar Chart",
+  "description": "Bar chart showing tickets by site",
+  "author": "Your Name",
+  "visualization": "index.js",
+  "style": "style.css",
+  "logoUrl": "",
+  "packageUrl": "",
+  "components": []
+}
