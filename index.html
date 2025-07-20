@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🎫 ID60 Ticket Dashboard</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/dist/tailwind.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -83,7 +83,7 @@
     <script>
         async function fetchDashboardData() {
             try {
-                const response = await fetch('/tickets-json');
+                const response = await fetch('https://a6be2378c920.ngrok-free.app/webhook/tickets-json');
                 if (!response.ok) throw new Error('Network response was not ok');
                 const data = await response.json();
 
